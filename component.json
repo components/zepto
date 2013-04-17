@@ -1,7 +1,14 @@
 {
   "name"        : "zepto",
-  "version"     : "1.0.0rc1",
+  "description" : "Shim repository for the Zepto.js JavaScript library.",
+  "version"     : "1.0.0",
   "main"        : "./zepto.js",
   "dependencies": {
-  }
+  },
+  "scripts": [
+    "zepto.js"
+  ],
+  "files": [
+    "zepto.min.js"
+  ]
 }

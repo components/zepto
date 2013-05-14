@@ -3,6 +3,7 @@
   "repo": "components/zepto",
   "description": "Shim repository for the Zepto.js JavaScript library.",
   "version": "1.0.0",
+  "main": "zepto.js",
   "scripts": [
     "zepto.js"
   ],

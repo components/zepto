@@ -1586,4 +1586,4 @@ window.Zepto = Zepto
   }
 
   testEl = null
-})(Zepto)
+})(Zepto);

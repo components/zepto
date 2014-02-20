@@ -1,4 +1,4 @@
-VERSION=v1.1.2
+VERSION=v1.1.3
 
 default: zepto
 	@cd $< && git pull && git checkout $(VERSION) && npm install && npm run-script dist

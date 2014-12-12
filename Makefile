@@ -6,6 +6,7 @@ default: zepto
 	@echo ";" >> zepto.js
 	@cp -f $</dist/zepto.min.js .
 	@du -bh zepto.* 2>/dev/null || du -h zepto.*
+	@sed -i.bak 's/\("version": \{1,\}\)".\{1,\}"/\1"$(VERSION)"/' bower.json component.json && rm -f *.bak
 
 zepto:
 	@git clone https://github.com/madrobby/zepto.git $@

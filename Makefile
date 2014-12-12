@@ -1,7 +1,7 @@
-VERSION=v1.1.4
+VERSION=1.1.4
 
 default: zepto
-	@cd $< && git checkout master && git pull && git checkout $(VERSION) && npm install && npm run-script dist
+	@cd $< && git fetch origin --quiet && git checkout --force --quiet v$(VERSION) && npm install && npm run-script dist
 	@cp -f $</dist/zepto.js .
 	@echo ";" >> zepto.js
 	@cp -f $</dist/zepto.min.js .

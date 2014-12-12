@@ -1,4 +1,4 @@
-VERSION=1.1.4
+VERSION=1.1.5
 
 default: zepto
 	@cd $< && git fetch origin --quiet && git checkout --force --quiet v$(VERSION) && npm install && npm run-script dist
